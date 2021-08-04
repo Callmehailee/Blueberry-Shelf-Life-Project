@@ -41,7 +41,7 @@ Y <- blueberry_dat[,"Final.Shelf.Life..Days."]
 #length(train)
 #test<-blueberry_dat_std[-my_blueberry_dat,]
 
-# Divide the dataset into 2/3 for training and 1/3 for testing 
+# Divide the dataset into 80% for training and 20% for testing 
 train=sample(1: nrow(blueberry_dat), nrow(blueberry_dat)*0.8)
 length(train)
 test=(- train)
